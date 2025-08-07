@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <ul>
+        <li><a href="#fifthPage">Serenity Moonlight</a></li>
+        <li style="float:right"><a href="#fifthPage">Contact</a></li>
+        <li style="float:right"><a href="#fourthPage">Blog</a></li>
+        <li style="float:right"><a href="#thirdPage">Services</a></li>
+        <li style="float:right"><a href="#secondPage">About</a></li>
+        <li style="float:right"><a href="#firstPage">Home</a></li>
+    </ul>
+
+<!-------First Page------->
+<div id="firstpage" class="relative">
+  <div class="absolute">
+    <img id="display-image" src="Images/1.jpg" alt="Main Image">
+  </div>
+
+  <div class="thumbnails">
+    <div class="firstImage"><img src="Images/1.jpg" alt="Thumbnail 1" onclick="changeImage(this)"></div>
+    <div class="secondImage"><img src="Images/2.jpg" alt="Thumbnail 2" onclick="changeImage(this)"></div>
+    <div class="thirdImage"><img src="Images/3.jpg" alt="Thumbnail 3" onclick="changeImage(this)"></div>
+    <div class="fourthImage"><img src="Images/4.jpg" alt="Thumbnail 4" onclick="changeImage(this)"></div>
+    <div class="fifthImage"><img src="Images/5.jpg" alt="Thumbnail 5" onclick="changeImage(this)"></div>
+    <div class="sixthImage"><img src="Images/6.jpg" alt="Thumbnail 6" onclick="changeImage(this)"></div>
+    <div class="seventhImage"><img src="Images/7.jpg" alt="Thumbnail 7" onclick="changeImage(this)"></div>
+    <div class="eightImage"><img src="Images/8.jpg" alt="Thumbnail 8" onclick="changeImage(this)"></div>
+  </div>
+
+  <div class="slideNumber">
+    <p>1/8</p>
+  </div>
+
+  <div class="previous">
+    <button id="prevBtn" onclick="navigate('prev')"><</button>
+  </div>
+  <div class="next">
+    <button id="nextBtn" onclick="navigate('next')">></button>
+  </div>
+</div>
+
+<!---- Second Page ----->
+<div id="secondPage" class="main">
+    <div class="staycation">
+        <h1>Serenity Moonlight Staycation <br>
+           SMDC Trees Residences</h1>
+            <p>Pasong Putik, Quezon City, 1118</p>
+    </div>
+
+    <div class="price">
+        <h1>₱2,000</h1>
+    </div>
+    <div class="build">
+        <p>Build Year</p>
+        <h1>2020</h1>
+    </div>
+
+    <div class="bedrooms">
+        <p>Bedrooms</p>
+        <h1>1</h1>
+    </div>
+
+    <div class="bathrooms">
+        <p>Bathrooms</p>
+        <h1>1</h1>
+    </div>
+
+    <div class="stories">
+        <p>Stories</p>
+        <h1>7</h1>
+    </div>
+
+    <div class="sqm">
+        <p>Sqm</p>
+        <h1>24.90</h1>
+    </div>
+</div>
+
+<!------Third Page------->
+<div id="thirdPage" class="thirdPage">
+
+    <div class="header">
+        <h1>Convenient Living</h1>
+    </div>
+
+    <div class="convenient">
+        <p>
+            This 1-bedroom, 1-bathroom condominium has an estimated total area of 24.90 square meters. 
+            It features access to nearly 3 types of pools and is conveniently located near Alfamart, 7-Eleven, and SM Fairview.
+        </p>
+        <p>
+            The unit offers a modern living space with a comfortable layout, perfect for individuals or coubles. 
+            Enjoy a secure and peaceful environment with easy access to public transportation and nearby amenities.
+        </p>
+    </div>
+</div>
+
+<!-------Fourth Page-------->
+<div id="fourthPage" class="fourthPage">
+    <div class="overlay"></div>
+    <div class="cozy">
+        <h1>Cozy 1-Bedroom Condominium with Modern Amenities and Prime Location</h1>
+    </div>
+</div>
+
+
+<!-------Fifth Page-------->
+<div id="fifthPage" class="fifthPage">
+    <div class="mapswrapper">
+        <iframe width="600" height="450" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=Trees%20Residences%2C%20Quezon%20City&zoom=10&maptype=roadmap">
+        </iframe>
+        <a href="https://taxinstructions.net/form-1040/"></a>
+
+        <style>
+            /* Wrapper to control the aspect ratio */
+            .mapswrapper {
+                position: relative;
+                width: 25%; /* Full width of the parent container */
+                height: 80%;
+                background: #f0f0f0; /* Optional: Adds a background color */
+                overflow: hidden;
+                z-index: 1;
+            }
+            
+            /* iframe to make it responsive */
+            .mapswrapper iframe {
+                position: absolute;  /* Position absolutely inside the wrapper */
+                top: 0;
+                left: 0;
+                width: 100%;  /* Full width of the wrapper */
+                height: 100%; /* Full height of the wrapper */
+                border: 0;
+            }
+            </style>
+    </div>
+
+    <div class="contact">
+        <h1>Contact</h1>
+    </div>
+    <div class="contactDetails">
+        <p>Serenity Moonlight Staycation <br>
+            SMDC Trees Residences</p>
+        <p>Email: sampleEmail@gmail.com</p>
+        <p>Phone Number: 09123456789</p>
+        <p>Address</p>
+        <p>Address, zipcode</p>
+        <p>Philippines</p>
+    </div>
+    <div class="facebook">
+        <a href="https://www.facebook.com/profile.php?id=100074847376838" target="_blank">
+            <i class="fab fa-facebook"></i>
+        </a>
+    </div>
+    <div class="instagram">
+        <a href="https://www.facebook.com/profile.php?id=100074847376838" target="_blank">
+            <i class="fab fa-instagram"></i>
+        </a>
+    </div>
+</div>
+
+<div class="footer">
+        <p>Copyright © 2024 Name of Company All Right Reserved</p>
+</div>
+
+    <script>
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            });
+        });
+
+
+        // JavaScript to update the main image
+        function changeImage(thumbnail) {
+            const mainImage = document.getElementById('display-image');
+            mainImage.src = thumbnail.src;
+        }
+    </script>
+
+<script>
+    let currentImageIndex = 0; // Start with the first image
+    const images = [
+      'Images/1.jpg',
+      'Images/2.jpg',
+      'Images/3.jpg',
+      'Images/4.jpg',
+      'Images/5.jpg',
+      'Images/6.jpg',
+      'Images/7.jpg',
+      'Images/8.jpg',
+    ];
+  
+    // Change the main image when a thumbnail is clicked
+    function changeImage(thumbnail) {
+      const imageSrc = thumbnail.src;
+      document.getElementById('display-image').src = imageSrc;
+      
+      // Update the slide number (current/total)
+      currentImageIndex = images.indexOf(imageSrc);
+      updateSlideNumber();
+    }
+  
+    // Update the slide number (e.g., 1/8, 2/8, etc.)
+    function updateSlideNumber() {
+      const slideNumber = document.querySelector('.slideNumber p');
+      slideNumber.textContent = `${currentImageIndex + 1}/8`;
+    }
+  
+    // Navigate through images using Previous and Next buttons
+    function navigate(direction) {
+      if (direction === 'prev') {
+        currentImageIndex = (currentImageIndex === 0) ? images.length - 1 : currentImageIndex - 1;
+      } else if (direction === 'next') {
+        currentImageIndex = (currentImageIndex === images.length - 1) ? 0 : currentImageIndex + 1;
+      }
+      document.getElementById('display-image').src = images[currentImageIndex];
+      updateSlideNumber();
+    }
+  
+    // Initialize the main image and slide number on page load
+    window.onload = function() {
+      document.getElementById('display-image').src = images[currentImageIndex];
+      updateSlideNumber();
+    };
+  </script>
+
+</body>
+</html>
